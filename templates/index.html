@@ -1,0 +1,17 @@
+{% extends "templates/base.html" %}
+{% block title %}
+	<h1> Home</h1>
+{%endblock%}
+{% block tab %}
+<ul class="nav nav-pills">
+	<li class="active"><a href = "/index">Home</a></li>
+	<li><a href = "/dog">Dog</a></li>
+	<li><a href = "/login">Login</a></li>
+	<li><a href = "/food">Food</a></li>
+</ul>
+{%endblock%}
+{% block content %} 
+	<p>This is the home page for my personal website. </p>
+	<p>Here's a personal fact about me: one of my favorite bands is Nirvana. Here's a band photo from </p>
+	<img src = "static/Nirvana.jpg" alt = "Nirvana Band Photo" width = "1028" height = "720">
+{%endblock%}

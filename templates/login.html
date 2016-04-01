@@ -1,0 +1,22 @@
+{%extends "templates/base.html" %}
+{% block title %}
+	<h1> Login</h1>
+{%endblock%}
+{% block tab %}
+<ul class="nav nav-pills">
+	<li><a href = "/index">Home</a></li>
+	<li><a href = "/dog">Dog</a></li>
+	<li class="active"><a href = "/login">Login</a></li>
+	<li><a href = "/food">Food</a></li>
+</ul>
+{%endblock%}
+{% block content %}
+	{%if title == "bad"%}
+	<a> Bad Credentials. Try again. </a>
+	{%endif%}
+	<form method="POST" action="/login">
+	<label>username:</label><input type="text" name="username">
+	<label>password:</label><input type="password" name="password">
+	<input type="submit" value="login">
+	</form>
+	{% endblock %}

@@ -1,0 +1,15 @@
+{%extends "templates/base.html" %}
+{% block title %}
+	<h1> Login</h1>
+{%endblock%}
+{% block tab %}
+<ul class="nav nav-pills">
+	<li><a href = "/index">Home</a></li>
+	<li><a href = "/dog">Dog</a></li>
+	<li class="active"><a href = "/login">Login</a></li>
+	<li><a href = "/food">Food</a></li>
+</ul>
+{%endblock%}
+{% block content %}
+	<p> You have successfully logged in!! Way to go! </p>
+	{% endblock %}

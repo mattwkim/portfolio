@@ -1,0 +1,24 @@
+{% extends "templates/base.html" %}
+{% block title %}
+	<h1> Food</h1>
+{%endblock%}
+{% block tab %}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Matt Kim</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/index">Home</a></li>
+      <li><a href="/dog">Dog</a></li>
+      <li><a href="/login">Login</a></li> 
+      <li class="active"><a href="/food">Food</a></li> 
+    </ul>
+  </div>
+</nav>
+{%endblock%}
+{% block content %} 
+	<p>This is the food page for my personal website. 
+	<p>Here's a personal fact about me: one of my favorite places to eat at is Wings Over. Here's a their logo</p>
+	<img src = "static/wingsover.png" alt = "Wings Over Logo">
+{%endblock%}

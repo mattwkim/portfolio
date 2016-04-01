@@ -1,0 +1,17 @@
+{% extends "templates/base.html" %}
+{% block title %}
+	<h1> Dog</h1>
+{%endblock%}
+{% block tab %}
+<ul class="nav nav-pills">
+  <li><a href="/index">Home</a></li>
+  <li class="active"><a href="/dog">Dog</a></li>
+  <li><a href="/login">Login</a></li>
+  <li><a href="/food">Food</a></li>
+</ul>
+{%endblock%}
+{% block content %} 
+	<p>This is the home page for my personal website. 
+	<p>Here's a personal fact about me: I have a bichon frise who's 9 years old and turning 10 this year. Here's a photo</p>
+	<img src = "static/bella.jpg" alt = "Bella" width = "1080" height = "720">
+{%endblock%}
