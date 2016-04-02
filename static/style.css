@@ -4,9 +4,14 @@
     background-color: green;
     color: orange;
 }
-h1 {
-	margin-top: 50px;
-	text-align: center;
+#thehead {
+	margin-top: 55px;
+	margin-left: 640px;
+	display: inline-block;
+	position: relative;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	visibility: visible;
 }
 img {
 	height: auto;
@@ -19,7 +24,18 @@ img {
 	margin-top: 10px;
 }
 body {
-	background-color: yellow;
+	background-color: #ffff00;
+}
+p {
+	margin-top: 50px;
+}
+footer {
+	position: fixed;
+	float: left;
+	bottom: 10px;
+	visibility: visible;
+	display: inline;
+	left: 0px;
 }
 @media screen and (min-width: 800px) and (max-width: 1024px) {
 	body{
