@@ -3,13 +3,27 @@
 	<h1> Login</h1>
 {%endblock%}
 {% block tab %}
-<ul class="nav nav-pills">
-	<li><a href = "/index">Home</a></li>
-	<li><a href = "/dog">Dog</a></li>
-	<li class="active"><a href = "/login">Login</a></li>
-	<li><a href = "/food">Food</a></li>
-</ul>
-{%endblock%}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+	   <div class="navbar-header">
+	       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+	           <span class="sr-only">Toggle navigation</span>
+	           <span class="icon-bar"></span>
+	           <span class="icon-bar"></span>
+	           <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="./index.html">Matt Kim</a>
+	   </div>
+	   <div class = "collapse navbar-collapse" id="navigationbar">
+	    <ul class="nav nav-pills">
+	      <li><a href="/index">Home</a></li>
+	      <li><a href="/dog">Dog</a></li>
+	      <li class="active"><a href="/login">Login</a></li> 
+	      <li><a href="/food">Food</a></li> 
+	    </ul>
+	    </div>
+  </div>
+</nav>{%endblock%}
 {% block content %}
 	<p> You have successfully logged in!! Way to go! </p>
 	{% endblock %}
