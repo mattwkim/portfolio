@@ -4,6 +4,10 @@
     background-color: green;
     color: orange;
 }
+h1 {
+	margin-top: 50px;
+	text-align: center;
+}
 img {
 	height: auto;
 	width: auto;
