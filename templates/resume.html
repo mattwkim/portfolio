@@ -1,0 +1,39 @@
+{% extends "templates/base.html" %}
+{% block title %}
+	<img src = "static/Resume.png" alt = "header1" id = "thehead">
+{%endblock%}
+{% block tab %}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container-fluid">
+	   <div class="navbar-header">
+	       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+	           <span class="sr-only">Toggle navigation</span>
+	           <span class="icon-bar"></span>
+	           <span class="icon-bar"></span>
+	           <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="./index">Matt Kim</a>
+	   </div>
+	   <div class = "collapse navbar-collapse" id="navigationbar">
+	    <ul class="nav nav-pills">
+	      <li><a href="/index">Home</a></li>
+	      <li><a href="/dog">Dog</a></li>
+	      <li><a href="/login">Login</a></li> 
+	      <li><a href="/contactme">Contact me</a></li> 
+	      <li class="active"><a href="/resume">Resume</a></li>
+	    </ul>
+	    </div>
+  </div>
+</nav>
+{%endblock%}
+{% block content %} 
+	<a href="/static/resume.docx">My Resume</a>
+	<br>
+	<br>
+	<p>If you would like to know more about me, my resume is available for download above. My current plans for this upcoming summer is to land an internship. With no relatable work experience, I know that I will be put at a severe disadvantage when it comes to searching for a job after graduation. What I hope to gain from an internship is a sharpened skill set, a network full of people in my field, and new friends. </p>
+	<br>
+	<p>Some personal facts hobbies include: TV, guitars, gaming, and playing with my dog. Since kindergarten, music has played a huge part in my life. I took lessons for the violin for 8 years, piano for 2 years, the drums for two years, and the guitar for 3 years. Watching TV, gaming, and playing with my dog are my favorite pastimes. Although my dog is getting old, she still acts like a baby at home.</p>
+	<br>
+	<br>
+	<img src="/static/Recent.jpg" alt = "2016" width = "512" height="360">
+{%endblock%}

@@ -56,6 +56,7 @@ app = webapp2.WSGIApplication([
     ('/dog', MainHandler),
     ('/contactme', MainHandler),
     ('/index', MainHandler),
+    ('/resume', MainHandler),
     ('/login', LoginHandler),
     ('/loggedin', LoginHandler)
     ], debug=True)

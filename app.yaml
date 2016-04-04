@@ -12,6 +12,8 @@ handlers:
   static_dir: static
 - url: .*
   script: main.app
+inbound_services:
+- mail
 
 libraries:
 - name: webapp2
