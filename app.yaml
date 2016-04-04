@@ -12,6 +12,9 @@ handlers:
   static_dir: static
 - url: .*
   script: main.app
+- url: /_ah/mail/.+
+  script: main.app
+  login: admin
 inbound_services:
 - mail
 

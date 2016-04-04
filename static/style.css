@@ -63,6 +63,9 @@
 		background-color: green;
 		color: orange;
 	}
+	a {
+		color: orange;
+	}
 	.nav>li>a:hover,
 	.nav>li>a:focus {
 	    text-decoration: none;
@@ -113,6 +116,19 @@
 	}
 }
 @media screen and (min-width: 0px) and (max-width: 770px) {
+	.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+		background-color: white;
+		color: purple;
+	}
+	a {
+		color: purple;
+	}
+	.nav>li>a:hover,
+	.nav>li>a:focus {
+	    text-decoration: none;
+	    background-color: pink;
+	    color: red;
+	}
 	body{
 		background-color: yellow;
 	}
