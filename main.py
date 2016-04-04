@@ -41,7 +41,7 @@ class LoginHandler(webapp2.RequestHandler):
     def post(self):
         username = self.request.get('username')
         password = self.request.get('password')
-        if username == "Colleen" and password == "pass":
+        if username == "mattwkim" and password == "1029384756Mk":
             template = JINJA_ENVIRONMENT.get_template("templates/loggedin.html")
             self.response.write(template.render({'title':'good'}))
         else:

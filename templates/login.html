@@ -1,6 +1,6 @@
 {%extends "templates/base.html" %}
 {% block title %}
-	<h1> Login</h1>
+	<img src = "static/Login.png" alt = "header1" id = "thehead">
 {%endblock%}
 {% block tab %}
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -26,6 +26,7 @@
   </nav>
 {%endblock%}
 {% block content %}
+	<p> ATTENTION: IF YOU ARE NOT THE ADMINSTRATOR OF THIS WEBSITE, BE GONE! </p>
 	{%if title == "bad"%}
 	<a> Bad Credentials. Try again. </a>
 	{%endif%}
