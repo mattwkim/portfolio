@@ -1,6 +1,6 @@
 {% extends "templates/base.html" %}
 {% block title %}
-	<h1> Food</h1>
+	<img src = "static/Contact me.png" alt = "header1" id = "thehead">
 {%endblock%}
 {% block tab %}
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -12,21 +12,28 @@
 	           <span class="icon-bar"></span>
 	           <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="./Index.html">Stadtfestlauf</a>
+	        <a class="navbar-brand" href="./index.html">Matt Kim</a>
 	   </div>
 	   <div class = "collapse navbar-collapse" id="navigationbar">
 	    <ul class="nav navbar-nav">
 	      <li><a href="/index">Home</a></li>
 	      <li><a href="/dog">Dog</a></li>
 	      <li><a href="/login">Login</a></li> 
-	      <li class="active"><a href="/food">Food</a></li> 
+	      <li class="active"><a href="/contactme">Contact me</a></li> 
 	    </ul>
 	    </div>
   </div>
 </nav>
 {%endblock%}
 {% block content %} 
-	<p>This is the food page for my personal website. 
-	<p>Here's a personal fact about me: one of my favorite places to eat at is Wings Over. Here's a their logo</p>
-	<img src = "static/wingsover.png" alt = "Wings Over Logo">
+	<p>If you would like to contact me, please fill out the form below. </p>
+	<br>
+	<form method="post" action="/">
+	<p>Enter your first name: <input type="text" name="firstname"/></p>
+	<p>Enter your last name: <input type="text" name="lastname"/></p>
+	<p>Enter the message you would like to send: <input type="text" name ="message"/></p>
+	<p><input type="submit"></p>
+	</form>
+
+
 {%endblock%}

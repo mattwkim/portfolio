@@ -17,6 +17,12 @@
 	margin-bottom: 0px;
 	visibility: visible;
 }
+table {
+	display: inline-block;
+}
+iframe {
+	display: inline-block;
+}
 img {
 	height: auto;
 	width: auto;

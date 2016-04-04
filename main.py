@@ -54,7 +54,7 @@ class LoginHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/dog', MainHandler),
-    ('/food', MainHandler),
+    ('/contactme', MainHandler),
     ('/index', MainHandler),
     ('/login', LoginHandler),
     ('/loggedin', LoginHandler)
