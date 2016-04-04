@@ -1,6 +1,6 @@
 {% extends "templates/base.html" %}
 {% block title %}
-	<img src = "static/Contact me.png" alt = "header1" id = "thehead">
+	<img src = "static/Contactme.png" alt = "header1" id = "thehead">
 {%endblock%}
 {% block tab %}
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -15,20 +15,19 @@
 	        <a class="navbar-brand" href="./index">Matt Kim</a>
 	   </div>
 	   <div class = "collapse navbar-collapse" id="navigationbar">
-	    <ul class="nav navbar-nav">
+	    <ul class="nav nav-pills nav-justified">
 	      <li><a href="/index">Home</a></li>
 	      <li><a href="/dog">Dog</a></li>
 	      <li><a href="/login">Login</a></li> 
 	      <li class="active"><a href="/contactme">Contact me</a></li>
-	      <li><a href="resume">Resume</a></li> 
+	      <li><a href="/resume">Resume</a></li> 
 	    </ul>
 	    </div>
   </div>
 </nav>
 {%endblock%}
 {% block content %} 
-	<p>If you would like to contact me, please fill out the form below. </p>
-	<br>
+	<p id = "first">If you would like to contact me, please fill out the form below. </p>
 	<form method="post" action="/">
 	<p>Enter your first name: <input type="text" name="firstname"/></p>
 	<p>Enter your last name: <input type="text" name="lastname"/></p>

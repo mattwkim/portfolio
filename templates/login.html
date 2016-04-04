@@ -15,7 +15,7 @@
 	        <a class="navbar-brand" href="./index">Matt Kim</a>
 	   </div>
 	   <div class = "collapse navbar-collapse" id="navigationbar">
-	    <ul class="nav nav-pills">
+	    <ul class="nav nav-pills nav-justified">
 	      <li><a href="/index">Home</a></li>
 	      <li><a href="/dog">Dog</a></li>
 	      <li class="active"><a href="/login">Login</a></li> 
@@ -27,7 +27,7 @@
   </nav>
 {%endblock%}
 {% block content %}
-	<p> ATTENTION: IF YOU ARE NOT THE ADMINSTRATOR OF THIS WEBSITE, BE GONE! </p>
+	<p id = "first"> ATTENTION: IF YOU ARE NOT THE ADMINSTRATOR OF THIS WEBSITE, BE GONE! </p>
 	{%if title == "bad"%}
 	<a> Bad Credentials. Try again. </a>
 	{%endif%}

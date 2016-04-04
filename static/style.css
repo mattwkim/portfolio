@@ -3,6 +3,9 @@
 		background-color: blue;
 		color: yellow;
 	}
+	a {
+		color: yellow;
+	}
 	.nav>li>a:hover,
 	.nav>li>a:focus {
 	    text-decoration: none;
@@ -10,13 +13,13 @@
 	    color: orange;
 	}
 	#thehead {
+		display: block;
+		position: absolute;
+		top: 0; bottom: 0; right: 0; left: 0;
+		margin: auto;
 		margin-top: 55px;
-		margin-left: 640px;
-		display: inline-block;
-		position: relative;
-		margin-right: 0px;
-		margin-bottom: 0px;
 		visibility: visible;
+		vertical-align: middle;
 	}
 	table {
 		display: inline-block;
@@ -37,27 +40,43 @@
 	body {
 		background-color: #ffff00;
 	}
+	#first {
+		color: blue;
+		margin-top: 230px;
+	}
 	p {
 		color: blue;
 	}
 	footer {
-		position:fixed;
-		float: left;
+		position: relative;
 		bottom: 0px;
-		visibility: visible;
-		display: inline;
-		left: 0px;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 	img {
 		margin-bottom: 30px;
 	}
 }
-@media screen and (min-width: 0px) and (max-width: 1024px) {
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+	.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+		background-color: green;
+		color: orange;
+	}
+	.nav>li>a:hover,
+	.nav>li>a:focus {
+	    text-decoration: none;
+	    background-color: white;
+	    color: purple;
+	}
 	body{
 		background-color: yellow;
 	}
-	p {
+	#first {
 		margin-top: 230px;
+		color: green;
+	}
+	p {
 		color: green;
 	}
 	#dog {
@@ -71,22 +90,64 @@
 		margin-top: 10px;
 	}
 	#thehead {
-		margin-top: -155px ;
-		margin-left: 80px;
-		display: inline;
+		display: block;
 		position: absolute;
-		margin-right: 0px;
-		margin-bottom: 0px;
+		top: 0; bottom: 0; right: 0; left: 0;
+		margin: auto;
+		margin-top: 55px;
 		visibility: visible;
+		vertical-align: middle;
 	}
 	footer {
+		position: relative;
+		bottom: 0px;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	table {
+		margin-left: 60px;
+	}
+	iframe {
+		padding-bottom: 50px;
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 770px) {
+	body{
+		background-color: yellow;
+	}
+	#first {
+		margin-top: 230px;
+		color: red;
+	}
+	p {
+		color: red;
+	}
+	#dog {
+		height: auto;
+		width: auto;
+		max-width: 500px;
+		max-height: 500px;
+		margin-right: 5px;
+		display: block;
+		margin-top: -30px;
+		margin-top: 10px;
+	}
+	#thehead {
+		display: block;
 		position: absolute;
-		float: left;
-		bottom: -210px;
+		top: 0; bottom: 0; right: 0; left: 0;
+		margin: auto;
+		margin-top: 55px;
 		visibility: visible;
-		display: inline;
-		left: -0px;
-		right: 0px;
+		vertical-align: middle;
+	}
+	footer {
+		position: relative;
+		bottom: 0px;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 	iframe {
 		padding-bottom: 30px;
