@@ -18,6 +18,8 @@ import webapp2
 import os
 import logging
 import jinja2
+from google.appengine.api import mail
+
 
 # Lets set it up so we know where we stored the template files
 JINJA_ENVIRONMENT = jinja2.Environment(
@@ -31,8 +33,28 @@ class MainHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template("templates" + self.request.path + "index.html")
             self.response.write(template.render())
         else:
-            template = JINJA_ENVIRONMENT.get_template("templates" + self.request.path + ".html")
+            if self.request.path == "/contactme":
+                template = JINJA_ENVIRONMENT.get_template("templates" + self.request.path + ".html")
+                self.response.write(template.render({'hello':'If you would like to contact me, please fill out the form below. '}))                
+            else:
+                template = JINJA_ENVIRONMENT.get_template("templates" + self.request.path + ".html")
+                self.response.write(template.render())
+    def post(self):
+        if self.request.path == '/':
+            template = JINJA_ENVIRONMENT.get_template("templates" + self.request.path + "index.html")
             self.response.write(template.render())
+        else:
+            if self.request.path == "/contactme":
+                template = JINJA_ENVIRONMENT.get_template("templates" + self.request.path + ".html")
+                user_address = "mattwkim@umich.edu"
+                sender_address = self.request.get("email")
+                subject = self.request.get("firstname") + "," + self.request.get("lastname")
+                body = "From " + self.request.get("firstname") + " " + self.request.get("lastname") + ",\n" + self.request.get("message")
+                mail.send_mail(sender_address, user_address, subject, body)
+                self.response.write(template.render({'hello':'Your message has been sent!'}))                
+            else:
+                template = JINJA_ENVIRONMENT.get_template("templates" + self.request.path + ".html")
+                self.response.write(template.render())
 
 class LoginHandler(webapp2.RequestHandler):
     def get(self):

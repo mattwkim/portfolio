@@ -44,6 +44,9 @@
 		color: blue;
 		margin-top: 230px;
 	}
+	#second {
+		color: blue;
+	}
 	p {
 		color: blue;
 	}
@@ -78,6 +81,9 @@
 	#first {
 		margin-top: 230px;
 		color: green;
+	}
+	#second {
+		color: blue;
 	}
 	p {
 		color: green;
@@ -135,6 +141,9 @@
 	#first {
 		margin-top: 230px;
 		color: red;
+	}
+	#second {
+		color: blue;
 	}
 	p {
 		color: red;

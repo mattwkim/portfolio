@@ -27,10 +27,11 @@
 </nav>
 {%endblock%}
 {% block content %} 
-	<p id = "first">If you would like to contact me, please fill out the form below. </p>
-	<form method="post" action="/">
+	<p id = "first">{{hello}}</p>
+	<form method="POST" action="/contactme" name="contact">
 	<p>Enter your first name: <input type="text" name="firstname"/></p>
 	<p>Enter your last name: <input type="text" name="lastname"/></p>
+	<p>Enter your email: <input type="text" name="email"/></p>
 	<p>Enter the message you would like to send: <input type="text" name ="message"/></p>
 	<p><input type="submit"></p>
 	</form>
